@@ -1,0 +1,45 @@
+
+.About-Section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+.about-section-inner-container {
+  width: 80%;
+}
+.about-section-heading {
+  font-size: 20px;
+  margin-bottom: 30px;
+  font-family: Roboto;
+  font-weight: bold;
+  color: #1BAE70;
+}
+.about-section-description {
+  font-size: 3rem;
+  line-height: 1.2;
+  font-weight: bold;
+  margin-bottom: 35px;
+  font-family: "'Menlo', 'Monaco', 'Courier New', monospace";
+}
+.about-section-paragrpah {
+  font-size: 2rem;
+  margin-top: 25px;
+  margin-bottom: 30px;
+}
+.about-section-experience-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  margin-top: 50px;
+  gap: 40px;
+}
+.Expereince-container-heading {
+  font-size: 2.2rem;
+  color: #1BAE70;
+  font-family: "'Menlo', 'Monaco', 'Courier New', monospace";
+}

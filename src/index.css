@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f4f6f4;
+}
+
+/* Set basic font and background color */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f7fafc;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Global container for smooth layout and spacing */
+div {
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Set a modern header style */
+header {
+  background: #1a202c;
+  color: #f7fafc;
+  padding: 20px 0;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+/* Style for Hero Section */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  background: linear-gradient(to right, #4c51bf, #2b6cb0);
+  color: #fff;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+/* About Section */
+.about {
+  padding: 60px 0;
+  background-color: #edf2f7;
+}
+
+.about h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.about p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.125rem;
+  line-height: 1.8;
+  text-align: center;
+}
+
+/* Projects Section */
+.projects {
+  padding: 60px 0;
+  background-color: #fff;
+}
+
+.projects h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.projects .project {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+
+.projects .project img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.projects .project-details {
+  max-width: 400px;
+  text-align: center;
+}
+
+.projects .project-details h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+/* Contact Section */
+.contact {
+  padding: 60px 0;
+  background-color: #edf2f7;
+}
+
+.contact h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.contact form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact input,
+.contact textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.contact button {
+  background-color: #4c51bf;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact button:hover {
+  background-color: #2b6cb0;
+}
+
+/* Footer */
+footer {
+  background-color: #1a202c;
+  color: #f7fafc;
+  text-align: center;
+  padding: 20px;
+}
+
+footer a {
+  color: #f7fafc;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}

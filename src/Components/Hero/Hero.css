@@ -1,0 +1,64 @@
+.Hero-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 50px;
+  padding-left: 100px;
+}
+.details-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 70vh;
+  width: 35vw;
+}
+.hello-text {
+  text-align: left;
+  font-family: sans-serif;
+  color: #4E5652;
+  margin: 0px;
+  padding: 0px;
+}
+.my-name-is-text {
+  border: none;
+}
+.details-section-mainheading {
+  font-size: 3.1rem;
+  font-family: "'Menlo', 'Monaco', 'Courier New', monospace";
+  margin: 0px;
+  padding: 0px;
+  color: #14261C;
+  line-height: 1.2;
+}
+.mail-icon{
+  height: 25px;
+  width: 30px;
+  margin-right: 15px;
+  /* background-color: green; */
+}
+.Details-section-contact-details {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 500px;
+  color: #4E5652;
+  font-family: sans-serif;
+  margin-bottom: 10px;
+}
+.details-section-subheading {
+  font-size: 2.2rem;
+  font-family: "'Menlo', 'Monaco', 'Courier New', monospace";
+  margin: 0px;
+  padding: 0px;
+  color: #4E5652;
+}
+.image-section {
+  height: 630px;
+  width: 630px;
+  border-radius: 320px;
+  background-image: url("/HeaderSectionPhotos/yash_Profile_image.jpeg");
+  background-size: cover;
+  border: 2px solid green;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
