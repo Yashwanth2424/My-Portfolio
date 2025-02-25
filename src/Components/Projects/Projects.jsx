@@ -70,27 +70,27 @@ const projectsList = [
   {
     projectId: 8,
     category: 'DYNAMIC',
-    imageURL: 'https://assets.ccbp.in/frontend/react-js/projects-d3-img.png',
-    title: 'Speed Typing Test',
-    url : "https://yashwanth2424.github.io/Flipkart_Front_End/",
+    imageURL: '/ProjectsPhotos/password_generator.jpg',
+    title: 'Password Generator',
+    url : "https://yashwanth2424.github.io/password-generator/",
     description:
-      'Speed Typing Test Application is capable of calculating the time to type the randomly generated quote.',
+      'A simple yet powerful React-based Password Generator that creates strong, random passwords with customizable lengths.',
   },
   {
     projectId: 9,
     category: 'DYNAMIC',
-    imageURL: 'https://assets.ccbp.in/frontend/react-js/projects-d1-img.png',
-    title: 'Random Joke Page',
-    url : "https://yashwanth2424.github.io/Flipkart_Front_End/",
+    imageURL: '/ProjectsPhotos/react_Projects.png',
+    title: 'ReactJs Mini Projects',
+    url : "https://yashwanth2424.github.io/my-react-projects-app/",
     description:
-      'Random Joke Page is an API-based dynamic Web Application that generates a new joke.',
+      'Explore my projects to see how I bring creativity and functionality together in the world of React development!.',
   },
   {
     projectId: 10,
     category: 'DYNAMIC',
     imageURL: '/ProjectsPhotos/Text-Translator.jpg',
     title: 'Text-Translator',
-    url : " https://yashwanth2424.github.io/Text-Translator/",
+    url : "https://github.com/Yashwanth2424/Text-Translator-WebPage.git",
     description:
       'The app features an easy-to-use interface, real-time translation, and supports various languages, making communication easier across borders.',
   },

@@ -1,10 +1,11 @@
 <script src="https://kit.fontawesome.com/eaab36c556.js" crossorigin="anonymous"></script>
-
+import Education from "../Education/Education";
 import "./Hero.css"
 
 const Hero = () => {
   return (
-    <div className="Hero-section">
+ <div>
+     <div className="Hero-section">
       <div className="details-section">
         <p className="hello-text">HELLO MY NAME IS</p>
         <div>
@@ -31,6 +32,8 @@ const Hero = () => {
         </div>
       </div>
     </div>
+    <Education />
+ </div>
   );
 };
 

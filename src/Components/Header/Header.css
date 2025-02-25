@@ -1,4 +1,4 @@
-.nav-bar-section {
+/* .nav-bar-section {
   background-color: #f4f6f4;
   display: flex;
   justify-content: space-between;
@@ -40,4 +40,99 @@
 .nav-list-item:hover {
   color: #007bff;
 }
+ */
 
+
+ /* Navbar Styling */
+/* Navbar Section */
+.nav-bar-section {
+  background-color: #f4f6f4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  width: 100%;
+  /* z-index: 1000;
+  position: fixed; */
+  top: 0;
+  left: 0;
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+}
+
+/* Logo */
+.navbar-logo-section {
+  width: 1000px;
+  height: 60px;
+  background-image: url("/HeaderSectionPhotos/YashwanthLogo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
+
+}
+
+/* Navigation List */
+.nav-list-items {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-list-item {
+  font-size: 17px;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: #14261c;
+  font-weight: 400;
+  padding: 10px 15px;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-list-item:hover {
+  color: #007bff;
+}
+
+/* Mobile Menu Button */
+.menu-icon {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #14261c;
+  position: absolute;
+  right: 20px;
+  top: 35px;
+  transform: translateY(-50%);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .nav-list-items {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 50%;
+    height: 100vh;
+    background-color: #f4f6f4;
+    text-align: center;
+    padding-top: 20px;
+    transition: all 0.18s ease-out;
+    box-shadow:2px 2px 2px 2px #0000001a;
+    /* border: 2px solid red; */
+  }
+
+  .nav-list-items.open {
+    display: flex;
+    /* border: 1px solid red; */
+  }
+
+  .nav-list-item {
+    padding: 15px;
+    width: 100%;
+  }
+
+  .menu-icon {
+    display: inline;
+   
+  }
+}

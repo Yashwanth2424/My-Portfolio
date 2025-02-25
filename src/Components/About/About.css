@@ -1,11 +1,11 @@
 
-.About-Section {
-  height: 100vh;
+.about-Section {
+  min-height: 86vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 50px;
+  /* border: 5px solid red; */
 }
 .about-section-inner-container {
   width: 80%;
@@ -42,4 +42,56 @@
   font-size: 2.2rem;
   color: #1BAE70;
   font-family: "'Menlo', 'Monaco', 'Courier New', monospace";
+}
+
+
+@media (max-width: 1024px) { /* Tablets */
+  .about-section-description {
+    font-size: 2rem;
+  }
+
+  .about-section-paragraph {
+    font-size: 1.1rem;
+  }
+
+  .Expereince-container-heading {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 768px) { /* Mobile */
+  .about-Section {
+    padding: 40px 3%;
+    /* border: 2px solid red; */
+  }
+
+  .about-section-description {
+    font-size: 1.7rem;
+  }
+
+  .about-section-paragraph {
+    font-size: 1rem;
+  }
+
+  .about-section-experience-container {
+    flex-direction: column;
+  }
+
+  .Expereince-container-heading {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 480px) { /* Small Mobile */
+  .about-section-description {
+    font-size: 1.6rem;
+  }
+
+  .about-section-paragraph {
+    font-size: 0.95rem;
+  }
+
+  .Expereince-container-heading {
+    font-size: 1.2rem;
+  }
 }

@@ -1,3 +1,4 @@
+/* HERO SECTION */
 .Hero-section {
   display: flex;
   flex-direction: row;
@@ -6,13 +7,16 @@
   padding-bottom: 50px;
   padding-left: 100px;
 }
+
+/* TEXT SECTION */
 .details-section {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  height: 70vh;
+  height: 80vh;
   width: 35vw;
 }
+
 .hello-text {
   text-align: left;
   font-family: sans-serif;
@@ -20,9 +24,7 @@
   margin: 0px;
   padding: 0px;
 }
-.my-name-is-text {
-  border: none;
-}
+
 .details-section-mainheading {
   font-size: 3.1rem;
   font-family: "'Menlo', 'Monaco', 'Courier New', monospace";
@@ -31,12 +33,16 @@
   color: #14261C;
   line-height: 1.2;
 }
-.mail-icon{
-  height: 25px;
-  width: 30px;
-  margin-right: 15px;
-  /* background-color: green; */
+
+.details-section-subheading {
+  font-size: 2.2rem;
+  font-family: "'Menlo', 'Monaco', 'Courier New', monospace";
+  margin: 0px;
+  padding: 0px;
+  color: #4E5652;
 }
+
+/* CONTACT DETAILS */
 .Details-section-contact-details {
   display: flex;
   flex-direction: row;
@@ -46,13 +52,14 @@
   font-family: sans-serif;
   margin-bottom: 10px;
 }
-.details-section-subheading {
-  font-size: 2.2rem;
-  font-family: "'Menlo', 'Monaco', 'Courier New', monospace";
-  margin: 0px;
-  padding: 0px;
-  color: #4E5652;
+
+.mail-icon {
+  height: 25px;
+  width: 30px;
+  margin-right: 15px;
 }
+
+/* IMAGE SECTION */
 .image-section {
   height: 630px;
   width: 630px;
@@ -60,5 +67,94 @@
   background-image: url("/HeaderSectionPhotos/yash_Profile_image.jpeg");
   background-size: cover;
   border: 2px solid green;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, 
+              rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, 
+              rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+/* RESPONSIVE DESIGN */
+
+/* 🖥️ Tablet Screens (1024px and below) */
+@media (max-width: 1024px) {
+  .Hero-section {
+    flex-direction: column;
+    padding-left: 50px;
+    padding-bottom: 30px;
+    text-align: center;
+  }
+
+  .details-section {
+    width: 80vw;
+    height: auto;
+    align-items: center;
+  }
+
+  .details-section-mainheading {
+    font-size: 2.8rem;
+  }
+
+  .details-section-subheading {
+    font-size: 2rem;
+  }
+
+  .Details-section-contact-details {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .image-section {
+    height: 500px;
+    width: 500px;
+    margin-top: 30px;
+  }
+}
+
+/* 📱 Mobile Screens (768px and below) */
+@media (max-width: 768px) {
+  .Hero-section {
+    padding-left: 20px;
+  }
+
+  .details-section {
+    width: 100%;
+  }
+
+  .details-section-mainheading {
+    font-size: 2.3rem;
+  }
+
+  .details-section-subheading {
+    font-size: 1.8rem;
+  }
+
+  .Details-section-contact-details {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image-section {
+    height: 350px;
+    width: 350px;
+  }
+}
+
+/* 📱 Small Mobile Screens (480px and below) */
+@media (max-width: 480px) {
+  .Hero-section {
+    padding-left: 10px;
+    padding-bottom: 20px;
+  }
+
+  .details-section-mainheading {
+    font-size: 2rem;
+  }
+
+  .details-section-subheading {
+    font-size: 1.5rem;
+  }
+
+  .image-section {
+    height: 300px;
+    width: 300px;
+  }
 }
