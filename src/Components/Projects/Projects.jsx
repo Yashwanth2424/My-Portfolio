@@ -71,7 +71,7 @@ const projectsList = [
     category: 'DYNAMIC',
     imageURL: 'https://assets.ccbp.in/frontend/react-js/projects-r3-img.png',
     title: 'Portfolio',
-    url : "https://yashwanth2424.github.io/Flipkart_Front_End/",
+    url : "https://yashwanth2424.github.io/My-Portfolio/",
     description:
       'A portfolio is the best alternative for a resume to showcase your skills to the digital world.',
   },
