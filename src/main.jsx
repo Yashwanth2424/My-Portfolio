@@ -7,6 +7,7 @@ import Hero from "./Components/Hero/Hero"
 import About from "./Components/About/About"
 import Skills from "./Components/Skills/skill"
 import Projects from "./Components/Projects/Projects"
+import ErrorPage from './Components/ErrorPage.jsx'
 
 
 
