@@ -5,6 +5,15 @@ import ProjectItem from '../projectItem/projectItem'
 
 import './Projects.css'
 
+import FlipkartImg from '../../assets/ProjectsPhotos/Flipkart.jpg';
+import CollegeWebsiteImg from '../../assets/ProjectsPhotos/College_Website_Image.jpg';
+import AmazonImg from '../../assets/ProjectsPhotos/amazon.png';
+import TodoListImg from '../../assets/ProjectsPhotos/to-do-list-app.png';
+import CalculatorImg from '../../assets/ProjectsPhotos/calculator.jpg';
+import PasswordGeneratorImg from '../../assets/ProjectsPhotos/password_generator.jpg';
+import ReactProjectsImg from '../../assets/ProjectsPhotos/react_Projects.png';
+import TextTranslatorImg from '../../assets/ProjectsPhotos/Text-Translator.jpg';
+
 const tabsList = [
   {tabId: 'STATIC', displayText: 'Static'},
   {tabId: 'RESPONSIVE', displayText: 'Responsive'},
@@ -15,7 +24,7 @@ const projectsList = [
     {
     projectId: 0,
     category: 'STATIC',
-    imageURL: '/ProjectsPhotos/Flipkart.jpg',
+    imageURL: FlipkartImg,
     title: 'Flipkart Home Page',
     url : "https://yashwanth2424.github.io/Flipkart_Front_End/",
     description:
@@ -25,7 +34,7 @@ const projectsList = [
   {
     projectId: 1,
     category: 'STATIC',
-    imageURL: '/ProjectsPhotos/College_Website_Image.jpg',
+    imageURL: CollegeWebsiteImg,
     title: 'College Website',
     url : " https://yashwanth2424.github.io/COLLEGE-WEBSITE/",
     description:
@@ -34,7 +43,7 @@ const projectsList = [
   {
     projectId: 2,
     category: 'STATIC',
-    imageURL: '/ProjectsPhotos/amazon.png',
+    imageURL: AmazonImg,
     title: 'Amazon Home Page',
     url : " https://yashwanth2424.github.io/Amazon-Home-Page-Clone/",
     description:
@@ -43,7 +52,7 @@ const projectsList = [
   {
     projectId: 4,
     category: 'RESPONSIVE',
-    imageURL: '/ProjectsPhotos/to-do-list-app.png',
+    imageURL: TodoListImg,
     title: 'To-do-List',
     url : " https://yashwanth2424.github.io/Todo-list/",
     description:
@@ -52,14 +61,14 @@ const projectsList = [
   {
     projectId: 5,
     category: 'RESPONSIVE',
-    imageURL: '/ProjectsPhotos/calculator.jpg',
+    imageURL: CalculatorImg,
     title: 'Basic Calculator',
     url : "https://yashwanth2424.github.io/Mini-Calculator/",
     description: 'The webpage includes mathematical operations like addition, subtraction, multiplication, and division, with an intuitive and user-friendly interface',
   },
   {
     projectId: 6,
-    category: 'RESPONSIVE',
+    category: 'DYNAMIC',
     imageURL: 'https://assets.ccbp.in/frontend/react-js/projects-r3-img.png',
     title: 'Portfolio',
     url : "https://yashwanth2424.github.io/Flipkart_Front_End/",
@@ -69,8 +78,8 @@ const projectsList = [
 
   {
     projectId: 8,
-    category: 'DYNAMIC',
-    imageURL: '/ProjectsPhotos/password_generator.jpg',
+    category: 'RESPONSIVE',
+    imageURL: PasswordGeneratorImg,
     title: 'Password Generator',
     url : "https://yashwanth2424.github.io/password-generator/",
     description:
@@ -79,7 +88,7 @@ const projectsList = [
   {
     projectId: 9,
     category: 'DYNAMIC',
-    imageURL: '/ProjectsPhotos/react_Projects.png',
+    imageURL: ReactProjectsImg,
     title: 'ReactJs Mini Projects',
     url : "https://yashwanth2424.github.io/my-react-projects-app/",
     description:
@@ -88,7 +97,7 @@ const projectsList = [
   {
     projectId: 10,
     category: 'DYNAMIC',
-    imageURL: '/ProjectsPhotos/Text-Translator.jpg',
+    imageURL: TextTranslatorImg,
     title: 'Text-Translator',
     url : "https://github.com/Yashwanth2424/Text-Translator-WebPage.git",
     description:
@@ -98,7 +107,7 @@ const projectsList = [
 
 class Projects extends Component {
   state = {
-    activeTabId: tabsList[0].tabId,
+    activeTabId: tabsList[2].tabId,
   }
 
   clickTabItem = tabValue => {

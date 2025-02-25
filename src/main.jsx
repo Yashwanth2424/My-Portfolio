@@ -7,7 +7,6 @@ import Hero from "./Components/Hero/Hero"
 import About from "./Components/About/About"
 import Skills from "./Components/Skills/skill"
 import Projects from "./Components/Projects/Projects"
-import Contact from "./Components/Contact/Contact"
 
 
 
@@ -20,10 +19,13 @@ const router = createBrowserRouter([
       { path: "about", element: <About /> },
       { path: "skills", element: <Skills /> },
       { path: "projects", element: <Projects /> },
-      { path: "contact", element: <Contact /> },
     ],
   },
-]);
+],
+{
+  basename: process.env.NODE_ENV === "production" ? "/My-Portfolio" : "/"
+}
+);
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
