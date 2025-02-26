@@ -87,7 +87,7 @@ progress::-moz-progress-bar {
 @media screen and (max-width: 1024px) {
   .Project-section {
     min-height: 100vh;
-    padding: 0px;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -112,6 +112,10 @@ progress::-moz-progress-bar {
 }
 
 @media screen and (max-width: 768px) {
+
+  .Project-section {
+   padding: 15px;
+  }
   .Peoject-section-inner-container {
     /* flex-direction: column;
     align-items: center; */
@@ -135,7 +139,7 @@ progress::-moz-progress-bar {
 
 @media screen and (max-width: 480px) {
   .Project-section {
-    padding: 0px;
+    padding: 18px;
     
   }
 

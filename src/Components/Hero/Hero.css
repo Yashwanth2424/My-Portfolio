@@ -5,7 +5,7 @@
   justify-content: center;
   align-items: center;
   padding-bottom: 50px;
-  padding-left: 100px;
+  padding-left: 80px;
 }
 
 /* TEXT SECTION */
@@ -47,7 +47,7 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  width: 500px;
+  width: auto;
   color: #4E5652;
   font-family: sans-serif;
   margin-bottom: 10px;
@@ -78,19 +78,20 @@
 @media (max-width: 1024px) {
   .Hero-section {
     flex-direction: column;
-    padding-left: 50px;
     padding-bottom: 30px;
+    padding-left: 0px;
+    width: auto;
     text-align: center;
   }
 
   .details-section {
-    width: 80vw;
+    width: auto;
     height: auto;
     align-items: center;
   }
 
   .details-section-mainheading {
-    font-size: 2.8rem;
+    font-size: 1.8rem;
   }
 
   .details-section-subheading {
@@ -102,9 +103,12 @@
     justify-content: center;
   }
 
+  .details-section-details {
+    padding: 0px;
+  }
   .image-section {
-    height: 500px;
-    width: 500px;
+    height: 350px;
+    width: 350px;
     margin-top: 30px;
   }
 }
@@ -112,7 +116,7 @@
 /* 📱 Mobile Screens (768px and below) */
 @media (max-width: 768px) {
   .Hero-section {
-    padding-left: 20px;
+    padding-left: 0px;
   }
 
   .details-section {
@@ -120,7 +124,7 @@
   }
 
   .details-section-mainheading {
-    font-size: 2.3rem;
+    font-size: 1.8rem;
   }
 
   .details-section-subheading {
@@ -130,6 +134,10 @@
   .Details-section-contact-details {
     flex-direction: column;
     align-items: center;
+    padding:0px
+  }
+  .details-section-details {
+    padding: 0px;
   }
 
   .image-section {
@@ -141,16 +149,21 @@
 /* 📱 Small Mobile Screens (480px and below) */
 @media (max-width: 480px) {
   .Hero-section {
-    padding-left: 10px;
+    padding-left: 0px;
     padding-bottom: 20px;
   }
-
+  .details-section-details {
+    padding: 0px;
+  }
   .details-section-mainheading {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
   .details-section-subheading {
     font-size: 1.5rem;
+  }
+  .details-section-details {
+    padding: 0px;
   }
 
   .image-section {

@@ -16,13 +16,13 @@ body {
 }
 
 /* Global container for smooth layout and spacing */
-div {
+/* div {
   margin: 0 auto;
   padding: 0 20px;
-}
+} */
 
 /* Set a modern header style */
-header {
+/* header {
   background: #1a202c;
   color: #f7fafc;
   padding: 20px 0;
@@ -32,7 +32,7 @@ header {
 header h1 {
   font-size: 2.5rem;
   font-weight: bold;
-}
+} */
 
 /* Style for Hero Section */
 .hero {
@@ -51,7 +51,7 @@ header h1 {
 }
 
 /* About Section */
-.about {
+/* .about {
   padding: 60px 0;
   background-color: #edf2f7;
 }
@@ -68,10 +68,10 @@ header h1 {
   font-size: 1.125rem;
   line-height: 1.8;
   text-align: center;
-}
+} */
 
 /* Projects Section */
-.projects {
+/* .projects {
   padding: 60px 0;
   background-color: #fff;
 }
@@ -101,10 +101,10 @@ header h1 {
 .projects .project-details h3 {
   font-size: 1.5rem;
   margin-bottom: 10px;
-}
+} */
 
 /* Contact Section */
-.contact {
+/* .contact {
   padding: 60px 0;
   background-color: #edf2f7;
 }
@@ -141,10 +141,10 @@ header h1 {
 
 .contact button:hover {
   background-color: #2b6cb0;
-}
+} */
 
 /* Footer */
-footer {
+/* footer {
   background-color: #1a202c;
   color: #f7fafc;
   text-align: center;
@@ -158,4 +158,4 @@ footer a {
 
 footer a:hover {
   text-decoration: underline;
-}
+} */
