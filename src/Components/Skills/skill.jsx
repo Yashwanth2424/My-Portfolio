@@ -16,9 +16,11 @@ const Skills = () => {
             <label>Javascript</label>
             <progress id="project" max={100} value={85} className="progress">85%</progress>
             <label>Python</label>
-            <progress id="project" max={100} value={80} className="progress">80%</progress>
+            <progress id="project" max={100} value={75} className="progress">75%</progress>
+            <label>ReactJs</label>
+            <progress id="project" max={100} value={65} className="progress">65%</progress>
             <label>Node Js</label>
-            <progress id="project" max={100} value={50} className="progress">50%</progress>
+            <progress id="project" max={100} value={45} className="progress">45%</progress>
             <label>MySql</label>
             <progress id="project" max={100} value={60} className="progress">60%</progress>
           </div>

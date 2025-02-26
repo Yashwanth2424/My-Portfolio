@@ -173,6 +173,7 @@ progress::-moz-progress-bar {
   align-items: center;
   padding: 20px;
   background: #f4f4f4;
+  width: 100%;
 }
 
 .social-links {
