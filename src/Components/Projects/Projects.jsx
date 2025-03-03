@@ -13,6 +13,7 @@ import CalculatorImg from '../../assets/ProjectsPhotos/calculator.jpg';
 import PasswordGeneratorImg from '../../assets/ProjectsPhotos/password_generator.jpg';
 import ReactProjectsImg from '../../assets/ProjectsPhotos/react_Projects.png';
 import TextTranslatorImg from '../../assets/ProjectsPhotos/Text-Translator.jpg';
+import Match_Game from '../../assets/ProjectsPhotos/Match_Game.webp'
 
 const tabsList = [
   {tabId: 'STATIC', displayText: 'Static'},
@@ -102,6 +103,15 @@ const projectsList = [
     url : "https://github.com/Yashwanth2424/Text-Translator-WebPage.git",
     description:
       'The app features an easy-to-use interface, real-time translation, and supports various languages, making communication easier across borders.',
+  },
+  {
+    projectId: 11,
+    category: 'RESPONSIVE',
+    imageURL: Match_Game,
+    title: 'Match Game',
+    url : "https://yashwanth2424.github.io/Match_Game/",
+    description:
+      'The Match Game is a fun and interactive memory game where players match pairs of cards within a limited time. This project showcases my skills in React, JavaScript, and CSS, focusing on state management and user experience.',
   },
 ]
 

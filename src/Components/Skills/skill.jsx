@@ -1,10 +1,10 @@
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import "./skill.css";
 
-const projects = [
-  { title: "Flipkart Clone", description: "A fully responsive e-commerce website.", link: "#" },
-  { title: "Portfolio Website", description: "A personal portfolio built with React.", link: "#" }
-];
+// const projects = [
+//   { title: "Flipkart Clone", description: "A fully responsive e-commerce website.", link: "#" },
+//   { title: "Portfolio Website", description: "A personal portfolio built with React.", link: "#" }
+// ];
 
 const Skills = () => {
   return (
