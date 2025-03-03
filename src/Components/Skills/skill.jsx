@@ -35,6 +35,8 @@ const Skills = () => {
             <li>Build Your Own Dynamic Web Application Certificate by NXTWave</li>
             <li>JIGNASA State level Student Study Project Participation Certificate 2022-23</li>
             <li>JIGNASA State level Student Study Project Participation Certificate 2023-24</li>
+            <li>Certificate of Completion of virtual Internship Program in Front-end Development</li>
+            <li>Letter of Recommendation by Co-Founder of CODEXINTERN</li>
           </ul>
         </div>
         <div className="social-section">
