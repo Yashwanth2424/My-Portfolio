@@ -1,49 +1,3 @@
-/* .nav-bar-section {
-  background-color: #f4f6f4;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 5%;
-}
-
-.navbar-logo-section {
-  width: 200px;
-  height: 100px;
-  background-image: url("/HeaderSectionPhotos/YashwanthLogo.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: left;
-  padding: 0px;
-  margin-right: auto;
-  width: 60%;
-}
-
-.nav-list-items {
-  list-style-type: none;
-  display: flex;
-  gap: 20px;
-  margin: 0px;
-  padding: 0;
-  margin-bottom: 28px;
-}
-
-.nav-list-item {
-  font-size: 17px;
-  font-family: sans-serif;
-  text-decoration: none;
-  color: #14261C;
-  font-weight: 400;
-  padding: 10px 15px;
-  transition: color 0.3s ease-in-out;
-}
-
-.nav-list-item:hover {
-  color: #007bff;
-}
- */
-
-
- /* Navbar Styling */
 /* Navbar Section */
 .nav-bar-section {
   background-color: #f4f6f4;
@@ -70,11 +24,11 @@
 
 }
 
-/* Navigation List */
 .nav-list-items {
   list-style: none;
   display: flex;
   gap: 20px;
+  width: 100%;
 }
 
 .nav-list-item {
@@ -85,6 +39,8 @@
   font-weight: 400;
   padding: 10px 15px;
   transition: color 0.3s ease-in-out;
+   width: 100%;
+  
 }
 
 .nav-list-item:hover {
@@ -103,36 +59,40 @@
   transform: translateY(-50%);
 }
 
-/* Responsive Design */
-@media screen and (max-width: 768px) {
+
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
   .nav-list-items {
-    display: none;
-    flex-direction: column;
     position: absolute;
-    top: 80px;
+    top: 65px;
     right: 0;
-    width: 50%;
-    height: 100vh;
-    background-color: #f4f6f4;
-    text-align: center;
-    padding-top: 20px;
-    transition: all 0.18s ease-out;
-    box-shadow:2px 2px 2px 2px #0000001a;
-    /* border: 2px solid red; */
+    flex-direction: column;
+    background: #ffffff; 
+    width: 220px;
+    padding: 20px;
+    gap: 20px;
+    display: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
   }
 
   .nav-list-items.open {
     display: flex;
-    /* border: 1px solid red; */
+    animation: slideDown 0.3s ease;
   }
 
   .nav-list-item {
-    padding: 15px;
-    width: 100%;
+    color: #333333; 
+    font-size: 16px;
+    text-decoration: none;
+    transition: color 0.3s ease;
   }
 
-  .menu-icon {
-    display: inline;
-   
+  .nav-list-item:hover {
+    color: #2563eb; 
   }
 }
+

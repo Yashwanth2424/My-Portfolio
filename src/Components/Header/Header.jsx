@@ -23,11 +23,11 @@ const Header = () => {
       </div>
 
       <ul className={`nav-list-items ${isMenuOpen ? "open" : ""}`}>
-        <li><Link className="nav-list-item" to="/" onClick={toggleMenu}>Home</Link></li>
-        <li><Link className="nav-list-item" to="/about" onClick={toggleMenu}>About</Link></li>
-        <li><Link className="nav-list-item" to="/skills" onClick={toggleMenu}>Skills</Link></li>
-        <li><Link className="nav-list-item" to="/projects" onClick={toggleMenu}>Projects</Link></li>
-        {/* <li><Link className="nav-list-item" to="/contact" onClick={toggleMenu}>Contact</Link></li> */}
+        <Link className="nav-list-item" to="/" onClick={toggleMenu}><li>Home</li></Link>
+       <Link className="nav-list-item" to="/about" onClick={toggleMenu}><li>About </li></Link>
+       <Link className="nav-list-item" to="/skills" onClick={toggleMenu}><li>Skills</li></Link>
+       <Link className="nav-list-item" to="/projects" onClick={toggleMenu}><li>Projects</li></Link>
+        
       </ul>
 
     </nav>
