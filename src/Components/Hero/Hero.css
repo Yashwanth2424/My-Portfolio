@@ -42,11 +42,31 @@
   font-weight: 500;
   color: var(--accent);
   letter-spacing: 0.5px;
-  margin-bottom: 20px;
+  margin-bottom: 12px;
   padding: 6px 14px;
   background-color: var(--accent-subtle);
   border: 1px solid var(--accent-subtle-border);
   border-radius: 100px;
+}
+
+.hero__status {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: fit-content;
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text-on-dark-muted);
+  margin-bottom: 20px;
+}
+
+.hero__status-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: var(--accent);
+  flex-shrink: 0;
 }
 
 .hero__name {
@@ -185,6 +205,11 @@
 
   .hero__bio {
     max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero__status {
     margin-left: auto;
     margin-right: auto;
   }

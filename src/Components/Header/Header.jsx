@@ -1,9 +1,12 @@
 import { useState, useEffect } from 'react'
 import './Header.css'
 
+const NAV_ITEMS = ['about', 'skills', 'projects', 'education', 'contact']
+
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
+  const [activeSection, setActiveSection] = useState('')
 
   useEffect(() => {
     const handleScroll = () => {
@@ -13,7 +16,26 @@ const Header = () => {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
-  const scrollToSection = (id) => {
+  useEffect(() => {
+    const sections = NAV_ITEMS.map((id) => document.getElementById(id)).filter(Boolean)
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActiveSection(entry.target.id)
+          }
+        })
+      },
+      { rootMargin: '-40% 0px -50% 0px' }
+    )
+
+    sections.forEach((section) => observer.observe(section))
+    return () => observer.disconnect()
+  }, [])
+
+  const handleNavClick = (event, id) => {
+    event.preventDefault()
     const el = document.getElementById(id)
     if (el) {
       el.scrollIntoView({ behavior: 'smooth' })
@@ -24,18 +46,20 @@ const Header = () => {
   return (
     <header className={`header ${isScrolled ? 'header--scrolled' : ''}`}>
       <div className="header__inner">
-        <button className="header__logo" onClick={() => scrollToSection('hero')}>
+        <a href="#hero" className="header__logo" onClick={(e) => handleNavClick(e, 'hero')}>
           TY
-        </button>
+        </a>
         <nav className={`header__nav ${isMenuOpen ? 'header__nav--open' : ''}`}>
-          {['about', 'skills', 'projects', 'education', 'contact'].map((item) => (
-            <button
+          {NAV_ITEMS.map((item) => (
+            <a
               key={item}
-              className="header__nav-link"
-              onClick={() => scrollToSection(item)}
+              href={`#${item}`}
+              className={`header__nav-link ${activeSection === item ? 'header__nav-link--active' : ''}`}
+              aria-current={activeSection === item ? 'true' : undefined}
+              onClick={(e) => handleNavClick(e, item)}
             >
               {item.charAt(0).toUpperCase() + item.slice(1)}
-            </button>
+            </a>
           ))}
         </nav>
         <button

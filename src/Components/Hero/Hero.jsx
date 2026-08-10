@@ -13,6 +13,10 @@ const Hero = () => {
       <div className="hero__inner">
         <div className="hero__content">
           <span className="hero__eyebrow">M.Sc. Web Engineering · TU Chemnitz</span>
+          <span className="hero__status">
+            <span className="hero__status-dot"></span>
+            Open to Werkstudent roles · Germany
+          </span>
           <h1 className="hero__name">Thalka<br />Yashwanth</h1>
           <h2 className="hero__title">Full-Stack Developer</h2>
           <p className="hero__bio">
@@ -37,6 +41,13 @@ const Hero = () => {
             </a>
             <a href="mailto:thalka.yashwanth.dev@gmail.com" className="hero__link">
               Email
+            </a>
+            <a
+              href={`${import.meta.env.BASE_URL}Thalka_Yashwanth_Resume.pdf`}
+              download="Thalka_Yashwanth_Resume.pdf"
+              className="hero__link"
+            >
+              Resume
             </a>
           </div>
         </div>

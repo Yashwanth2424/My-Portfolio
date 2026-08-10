@@ -47,6 +47,21 @@
   pointer-events: none;
 }
 
+.projects__featured-media {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 32px;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid rgba(27, 174, 112, 0.18);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+}
+
+.projects__featured-image {
+  width: 100%;
+  display: block;
+}
+
 .projects__featured-tag {
   display: inline-block;
   font-size: 0.75rem;
@@ -178,6 +193,12 @@
   font-size: 1.2rem;
   font-weight: 700;
   color: var(--text-on-light);
+}
+
+.projects__card-links {
+  display: flex;
+  gap: 14px;
+  flex-shrink: 0;
 }
 
 .projects__card-link {

@@ -3,7 +3,7 @@ import './Skills.css'
 const skillGroups = [
   {
     category: 'Frontend',
-    skills: ['JavaScript (ES6+)', 'React.js', 'Next.js 16', 'HTML5', 'CSS3', 'Tailwind CSS', 'Material UI', 'SWR'],
+    skills: ['TypeScript', 'JavaScript (ES6+)', 'React.js', 'Next.js 16', 'HTML5', 'CSS3', 'Tailwind CSS', 'Material UI', 'SWR'],
   },
   {
     category: 'Backend & Database',
@@ -15,7 +15,7 @@ const skillGroups = [
   },
   {
     category: 'Currently Learning',
-    skills: ['TypeScript', 'Jest', 'React Testing Library'],
+    skills: ['NestJS', 'Google Cloud Platform', 'Terraform'],
   },
 ]
 
