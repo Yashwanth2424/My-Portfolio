@@ -58,6 +58,11 @@
   background-color: var(--accent-subtle);
 }
 
+.header__nav-link--active {
+  color: var(--accent);
+  background-color: var(--accent-subtle);
+}
+
 .header__menu-btn {
   display: none;
   background: none;

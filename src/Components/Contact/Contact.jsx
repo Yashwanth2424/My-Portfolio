@@ -5,7 +5,7 @@ const Contact = () => {
     <section id="contact" className="contact">
       <div className="contact__inner">
         <div className="contact__label">Contact</div>
-        <h2 className="contact__heading">Lets Work Together</h2>
+        <h2 className="contact__heading">Let's Work Together</h2>
 
         <p className="contact__sub">
           I am currently looking for a Werkstudent position in web development in Germany.
