@@ -34,6 +34,23 @@
   margin-bottom: 48px;
 }
 
+.contact__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 32px;
+}
+
+.contact__meta-pill {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--accent);
+  background-color: var(--accent-subtle);
+  border: 1px solid var(--accent-subtle-border);
+  padding: 6px 14px;
+  border-radius: 100px;
+}
+
 .contact__cards {
   display: flex;
   flex-direction: column;

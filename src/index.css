@@ -59,3 +59,12 @@ section {
 button {
   font-family: var(--font-body);
 }
+
+a:focus-visible,
+button:focus-visible {
+  outline-color: var(--accent);
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 3px;
+  border-radius: 4px;
+}

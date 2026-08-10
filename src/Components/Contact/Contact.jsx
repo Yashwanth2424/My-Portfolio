@@ -12,6 +12,12 @@ const Contact = () => {
           If you have an opportunity or just want to connect, I love to hear from you.
         </p>
 
+        <div className="contact__meta">
+          <span className="contact__meta-pill">German — B1</span>
+          <span className="contact__meta-pill">English — B2 (Fluent)</span>
+          <span className="contact__meta-pill">Available 20h/week · Remote (Germany-wide)</span>
+        </div>
+
         <div className="contact__cards">
           <a
             href="mailto:thalka.yashwanth.dev@gmail.com"
@@ -52,6 +58,19 @@ const Contact = () => {
               <span className="contact__card-label">GitHub</span>
               <span className="contact__card-value">
                 github.com/Yashwanth2424
+              </span>
+            </div>
+          </a>
+
+          <a
+            href="tel:+4915511314603"
+            className="contact__card"
+          >
+            <div className="contact__card-icon">☎</div>
+            <div className="contact__card-info">
+              <span className="contact__card-label">Phone</span>
+              <span className="contact__card-value">
+                +49 155 11314603
               </span>
             </div>
           </a>
