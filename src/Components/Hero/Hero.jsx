@@ -42,13 +42,6 @@ const Hero = () => {
             <a href="mailto:thalka.yashwanth.dev@gmail.com" className="hero__link">
               Email
             </a>
-            <a
-              href={`${import.meta.env.BASE_URL}Thalka_Yashwanth_Resume.pdf`}
-              download="Thalka_Yashwanth_Resume.pdf"
-              className="hero__link"
-            >
-              Resume
-            </a>
           </div>
         </div>
         <div className="hero__image-wrap">
