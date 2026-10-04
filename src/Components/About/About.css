@@ -1,82 +1,53 @@
 .about {
-  background-color: var(--bg-light);
-  padding: var(--section-pad);
+  padding-top: clamp(24px, 3vw, 40px);
 }
 
-.about__inner {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.about__label {
-  font-family: var(--font-body);
-  font-size: 0.8rem;
-  font-weight: 600;
-  color: var(--accent);
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  margin-bottom: 40px;
-}
-
-.about__content {
+.about__grid {
   display: grid;
-  grid-template-columns: 1fr 1.2fr;
-  gap: 80px;
+  grid-template-columns: 1.3fr 1fr;
+  gap: clamp(24px, 4vw, 48px);
   align-items: start;
+  margin-top: 28px;
 }
 
-.about__heading {
-  font-family: var(--font-display);
-  font-size: clamp(1.6rem, 3vw, 2.4rem);
-  font-weight: 700;
-  color: var(--text-on-light);
-  line-height: 1.2;
-  position: sticky;
-  top: 100px;
+.about__text p {
+  max-width: 62ch;
+  font-size: 1.05rem;
+  line-height: 1.75;
+  color: var(--color-text-muted);
 }
 
-.about__para {
-  font-size: 1rem;
-  line-height: 1.8;
-  color: var(--text-on-light-muted);
-  margin-bottom: 20px;
+.about__text p + p {
+  margin-top: 18px;
 }
 
-.about__stats {
-  display: flex;
-  gap: 32px;
-  margin-top: 40px;
-  padding-top: 32px;
-  border-top: 1px solid rgba(27, 174, 112, 0.15);
-  flex-wrap: wrap;
+.about__facts {
+  padding: clamp(20px, 3vw, 28px);
+  border-radius: 20px;
 }
 
-.about__stat {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
+.about__fact + .about__fact {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid var(--color-border);
 }
 
-.about__stat-number {
-  font-family: var(--font-display);
-  font-size: 2rem;
-  font-weight: 800;
-  color: var(--accent);
+.about__fact dt {
+  margin-bottom: 4px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-accent);
 }
 
-.about__stat-label {
-  font-size: 0.8rem;
-  color: var(--text-on-light-muted);
-  font-weight: 500;
+.about__fact dd {
+  font-weight: 600;
+  color: var(--color-text);
 }
 
-@media (max-width: 900px) {
-  .about__content {
-    grid-template-columns: 1fr;
-    gap: 40px;
-  }
-
-  .about__heading {
-    position: static;
+@media (max-width: 800px) {
+  .about__grid {
+    grid-template-columns: minmax(0, 1fr);
   }
 }

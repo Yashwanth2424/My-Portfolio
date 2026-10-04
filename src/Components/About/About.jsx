@@ -1,50 +1,47 @@
 import './About.css'
 
+const facts = [
+  { label: 'Studying', value: 'M.Sc. Web Engineering, TU Chemnitz' },
+  { label: 'Based in', value: 'Chemnitz, originally from Hyderabad' },
+  { label: 'Languages', value: 'English B2, German B1' },
+  { label: 'Availability', value: '20 h/week from 15 Oct 2026' },
+  { label: 'Relocation', value: 'Open to relocate within Germany' },
+]
+
 const About = () => {
   return (
-    <section id="about" className="about">
-      <div className="about__inner">
-        <div className="about__label">About Me</div>
-        <div className="about__content">
-          <div className="about__left">
-            <h2 className="about__heading">
-              Turning complex problems into clean, working software.
-            </h2>
+    <section id="about" className="section about">
+      <div className="container">
+        <p className="section-label">About</p>
+        <h2 className="section-heading">I build web apps and ship them</h2>
+
+        <div className="about__grid">
+          <div className="about__text">
+            <p>
+              I am a Web Engineering master&apos;s student at TU Chemnitz. I enjoy working on the
+              whole application, from the database and API to the interface, and I deploy what
+              I build so it can be used, not only run on my laptop.
+            </p>
+            <p>
+              My three projects cover different sides of the job. MockMentor is a booking
+              platform with login, user roles and email notifications. The road accidents
+              project imports about 1.5 million public records into PostgreSQL. The job tracker
+              is a TypeScript app I use for my own applications.
+            </p>
+            <p>
+              I am looking for a Werkstudent or internship role in frontend or full-stack web
+              development, where I can learn from a team and contribute from the first weeks.
+            </p>
           </div>
-          <div className="about__right">
-            <p className="about__para">
-              I am a full-stack developer pursuing my Masters in Web Engineering at TU Chemnitz, Germany.
-              My focus is on building production-ready web applications — not prototypes.
-            </p>
-            <p className="about__para">
-              My most recent project, MockMentor, is a fully deployed interview booking platform
-              with role-based access, JWT authentication, real-time scheduling, and automated email
-              notifications. It demonstrates my ability to architect, build, and ship a complete
-              full-stack application independently.
-            </p>
-            <p className="about__para">
-              I work with Next.js, React, Node.js, PostgreSQL, and Prisma. I write clean,
-              maintainable code with attention to security, performance, and scalability.
-            </p>
-            <p className="about__para">
-              Outside of code, I enjoy cricket and reading — both teach you that consistency
-              beats intensity.
-            </p>
-            <div className="about__stats">
-              <div className="about__stat">
-                <span className="about__stat-number">20+</span>
-                <span className="about__stat-label">API Endpoints Built</span>
+
+          <dl className="about__facts glass">
+            {facts.map((fact) => (
+              <div key={fact.label} className="about__fact">
+                <dt>{fact.label}</dt>
+                <dd>{fact.value}</dd>
               </div>
-              <div className="about__stat">
-                <span className="about__stat-number">3</span>
-                <span className="about__stat-label">Roles Architected</span>
-              </div>
-              <div className="about__stat">
-                <span className="about__stat-number">1</span>
-                <span className="about__stat-label">Production Deployment</span>
-              </div>
-            </div>
-          </div>
+            ))}
+          </dl>
         </div>
       </div>
     </section>
