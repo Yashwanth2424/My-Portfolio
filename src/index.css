@@ -24,6 +24,7 @@
   --glass-blur: 14px;
 
   --container-width: 1120px;
+  --container-gutter: clamp(16px, 5vw, 32px);
   --section-space: clamp(64px, 9vw, 112px);
 
   --font-display: 'Plus Jakarta Sans Variable', system-ui, sans-serif;
@@ -85,7 +86,7 @@ button:focus-visible {
   width: 100%;
   max-width: var(--container-width);
   margin: 0 auto;
-  padding-inline: clamp(16px, 5vw, 32px);
+  padding-inline: var(--container-gutter);
 }
 
 .section {
